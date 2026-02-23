@@ -1,79 +1,74 @@
 # IMDB-SQL-Data-Analysis
 IMDB Movie Data Analysis using SQL with business insights
 
-
-# 🎬 IMDB Movie Data Analysis using SQL
+# 🎬 IMDB Movie Data Analysis using MySQL
 
 ## 📌 Problem Statement
 
-RSVP Movies is planning to launch a new movie project and wants to make data-driven decisions. 
+RSVP Movies wants to make data-driven decisions for its upcoming movie projects. 
 
-Using the IMDB dataset, this project performs in-depth SQL analysis to answer key business questions such as:
-
-- Which genre produces the most movies?
-- Which production houses create the most hits?
-- Who are the top actors and directors?
-- What are the trends in movie ratings?
-- Which movies are Superhits, Hits, or Flops?
-
-The goal is to extract meaningful business insights using SQL.
+Using the IMDB dataset, this project analyzes movie performance, genres, production houses, actors, and directors to extract meaningful business insights using SQL.
 
 ---
 
 ## 📂 Dataset Description
 
-The dataset contains multiple related tables:
+Database: imdb
 
-- `movie` – Movie details (title, duration, country, income, etc.)
-- `ratings` – IMDb ratings and votes
-- `genre` – Movie genres
-- `names` – Actor/Director details
-- `role_mapping` – Actor-movie relationship
-- `director_mapping` – Director-movie relationship
+Tables Used:
+- movie
+- ratings
+- genre
+- names
+- role_mapping
+- director_mapping
 
-Database Used: `imdb`
+The dataset includes movie details, ratings, genres, actor/director information, and vote counts.
 
 ---
 
 ## 🛠 Tools Used
 
 - MySQL
-- SQL Window Functions
-- CTE (Common Table Expressions)
+- SQL (Structured Query Language)
+
+Concepts Used:
+- Joins (INNER JOIN, LEFT JOIN)
+- CTE (WITH)
+- Window Functions (RANK, ROW_NUMBER)
 - Aggregate Functions
-- Ranking Functions (RANK, ROW_NUMBER)
 - Date Functions
+- CASE Statements
+- Weighted Average Calculation
 
 ---
 
-## 📊 Key Insights
+## 📊 Key Analysis Performed
 
-✔ Drama genre has the highest number of movies  
-✔ Thriller is among the top-ranked genres  
-✔ Marvel Studios is one of the top production houses by votes  
-✔ Weighted average ratings were used to rank actors  
-✔ Vijay Sethupathi ranked among top Indian actors  
-✔ Superhit movies classified using rating-based categories  
+✔ Total movies released per year and month  
+✔ Top genres based on movie count  
+✔ Top 10 highest rated movies  
+✔ Production houses with most hit movies  
+✔ Ranking actors and actresses using weighted ratings  
+✔ Classification of movies (Superhit, Hit, Flop)  
+✔ Top directors based on performance metrics  
+✔ Genre-wise running totals and moving averages  
 
 ---
 
 ## 🧠 Skills Demonstrated
 
-- Complex Joins
+- Data Aggregation
 - Multi-table Analysis
 - Business Insight Extraction
-- Window Functions
-- Ranking & Aggregation
-- Weighted Average Calculation
-- Data Classification using CASE
-- Date-based filtering
-- Performance analysis of directors and actors
+- Ranking & Window Functions
+- Performance Analysis
+- Query Optimization Thinking
+- Real-world Data Problem Solving
 
 ---
 
-## 📈 Project Highlights
+## 🚀 Project Outcome
 
-- 29+ Business SQL Questions Solved
-- Advanced Query Writing
-- Real-world Production House & Actor Ranking
-- Revenue & Genre Trend Analysis
+This project demonstrates strong SQL querying skills and the ability to derive business insights from structured data using MySQL.
+
